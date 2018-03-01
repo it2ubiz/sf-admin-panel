@@ -1,0 +1,6 @@
+<h2>{{title}}</h2>
+<div>
+        <table border=1 style="border:1px #000000 solid">
+          <tr *ngFor="let user of users.data"><td>{{user.userID}}</td><td><a href="/user/{{user._id}}">{{user.displayName}}</a></td></tr>
+        </table>
+</div>
